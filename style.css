@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.full {
+    max-width: 1900px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    background-color: white; /* #E4E5EA;*/
+}
+/*---------------headrer---------------*/
+header {
+    border-bottom: solid 2px #0C151C;
+    display: flex;
+    padding: 3px;
+    flex-direction: column;
+    font-family: 'Comfortaa';
+    src: url(fonts/Comfortaa-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.all_header_menu_bez_search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 35px;
+    display: inline-flex;
+    vertical-align: middle;
+    height: 70px;
+}
+
+.tel {
+    border: 1px solid black; 
+    padding: 5px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+
+.d7 input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background-color: none;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+.d7 input:focus {
+  width: 300px;
+}
+
+.d7 button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+.top_menu {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.top_menu li {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.top_menu a {
+    font-family: Arial;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.top_menu a:hover {
+    color: #697279;
+}
+
+/*---------------main---------------*/
+main{
+    font-family: 'Times New Roman';
+}
+
+.main_menu {
+    display: flex; 
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.main_photos {
+    flex-direction: column;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.photo_first{
+    object-fit:cover;
+    border: solid;
+    display: flex;
+    flex-grow: 1;
+    border: solid;  
+    margin: 8px;
+    flex-direction: column;
+    width: 512px;
+    height: 300px;
+    transition: all 1s ease; 
+}
+.photo_second{
+    border: solid;
+    object-fit:cover;
+    display: flex;
+    flex-grow: 1;
+    border: solid;  
+    margin-top: 35px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width:512px;
+    height: 300px; 
+    transition: all 1s ease;
+}
+
+.main_text {
+    display: inline-flex;
+   flex-direction: column;
+}
+
+.text_first{
+    word-wrap: break-word;
+}
+
+.text_second{
+    
+    margin-top: 5%;
+    word-wrap: break-word;
+}
+
+.text_third{
+    margin-top: 30px;
+    padding: 10px; /* Поля */
+    word-wrap: break-word;
+}
+
+.gallary {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 8px;
+    columns: 3;
+    column-gap: 8px;
+}
+
+.gallary img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.textik {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    margin-top: 15px;
+}
+
+.line {
+    border: solid 1px #0C151C;
+    background-color: #0C151C;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*---------------footer---------------*/
+
+footer{
+    font-family: Georgia;
+    height: 40px;
+    background-color: #bbbbbb;
+    border-top: solid 2px #0C151C;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.pic {
+    height: 100%;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        justify-content:center;
+    }
+    .gallary{
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .top_menu{
+        justify-content: center;
+    }
+
+    .main_menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main_photos {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main_text {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    height: auto;
+    max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main_menu {
+    display: flex; 
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+    .photo_first, .photo_second {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-width: 70%;
+}
+    .main_text{
+    width: auto;
+    height: auto;
+}
+    .gallary{
+    columns: 2;
+}
+}
