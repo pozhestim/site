@@ -26,7 +26,7 @@ header {
     padding: 3px;
     flex-direction: column;
     font-family: 'Comfortaa';
-    src: url(fonts/Comfortaa-Regular.ttf);
+    src: url(fonts/Comfortaa-Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -45,10 +45,12 @@ header {
 }
 
 .tel {
-    border: 1px solid black; 
+    border: 2px solid #324b4e;
     padding: 5px;
     text-align: center;
+    border-radius: 12px;
 }
+
 
 .search{
     display: flex;
@@ -130,22 +132,19 @@ main{
 
 .photo_first{
     object-fit:cover;
-    border: solid;
     display: flex;
-    flex-grow: 1;
-    border: solid;  
+    flex-grow: 1;  
     margin: 8px;
     flex-direction: column;
     width: 512px;
     height: 300px;
     transition: all 1s ease; 
+    border-radius: 2%;
 }
 .photo_second{
-    border: solid;
     object-fit:cover;
     display: flex;
     flex-grow: 1;
-    border: solid;  
     margin-top: 35px;
     margin-left: 8px;
     margin-bottom: 10px;
@@ -153,6 +152,7 @@ main{
     width:512px;
     height: 300px; 
     transition: all 1s ease;
+    border-radius: 2%;
 }
 
 .main_text {
@@ -171,9 +171,20 @@ main{
 }
 
 .text_third{
-    margin-top: 30px;
-    padding: 10px; /* Поля */
-    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.zag_third{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.main_text_other{
+    display: flex;
+    flex-direction: column;
 }
 
 .gallary {
@@ -184,10 +195,27 @@ main{
     column-gap: 8px;
 }
 
+.photo7{
+    margin-top: 1px;
+}
+
+.photo1 {
+    margin-top: 15px;
+}
+
+.photo6{
+    margin-top: 19px;
+}
+
 .gallary img {
     width: 100%;
     margin-bottom: 8px;
+    border-radius: 2%;
+    transition: 1.5s; 
 }
+.gallary img:hover {
+        transform: scale(1.2); 
+       }
 
 .textik {
     margin-left: auto;
@@ -218,9 +246,14 @@ footer{
 }
 
 .pic {
-    height: 100%;
+    height: 75%;
     margin-left: 5px;
+    transition: 1s;
 }
+.pic:hover {
+        transform: scale(1.2); 
+       }
+
 
 @media screen and (max-width: 700px) {
     header {
